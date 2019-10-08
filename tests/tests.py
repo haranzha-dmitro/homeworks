@@ -22,7 +22,7 @@ class TestCases(unittest.TestCase):
         self.assertRaises(ValueError, self.test_rectangle1.get_sum_of_corners, 5)
 
     def test_get_sum_of_corners_right(self):
-        for corner in range(1, 4):
+        for corner in range(1, 5):
             self.assertEqual(self.test_rectangle1.get_sum_of_corners(corner), corner * 90)
 
     def test_get_rectangle_diagonal(self):
