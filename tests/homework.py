@@ -31,13 +31,13 @@ class Rectangle:
         :param number_of_corners:
         :return:
         """
+
+
         if number_of_corners > 4:
             raise ValueError("Rectangle has only 4 corners")
-
         sum_of_corners = 0
         for i in range(number_of_corners):
             sum_of_corners += 90
-
         return sum_of_corners
 
     def get_rectangle_diagonal(self):
@@ -68,7 +68,7 @@ class Rectangle:
         :return:
         """
         if self.width != self.height:
-            assert ValueError("Can't inscribed circle in rectangle with such width and height")
+            raise ValueError("Can't inscribed circle in rectangle with such width and height")
         diagonal = self.get_rectangle_diagonal()
-        radius = diagonal / 2 * math.sqrt(2)
+        radius = diagonal / (2 * math.sqrt(2))
         return radius
