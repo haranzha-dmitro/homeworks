@@ -12,7 +12,7 @@ def home_page():
 def get_vegetables():
     vegetables_list = ['beans', 'carrot', 'beetroot', 'cucumber']
     return render_template("vegetables.html", data=vegetables_list)
-
+                                                                                                                    
 
 @app.route('/fruits')
 def get_fruits():
