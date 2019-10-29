@@ -35,10 +35,10 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/vegetables">Vegetables</a>
+        <a class="nav-link" href={{url_for('get_vegetables')}}>Vegetables</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/fruits">Fruits</a>
+        <a class="nav-link" href={{url_for('get_fruits')}}>Fruits</a>
       </li>
 
        <!-- Dropdown -->
@@ -46,8 +46,8 @@
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">Dropdown</a>
         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="/vegetables">Vegetables</a>
-          <a class="dropdown-item" href="/fruits">Fruits</a>
+          <a class="dropdown-item" href={{url_for('get_vegetables')}}>Vegetables</a>
+          <a class="dropdown-item" href={{url_for('get_fruits')}}>Fruits</a>
 
         </div>
       </li>

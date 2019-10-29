@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
@@ -10,13 +10,13 @@ def home_page():
 
 @app.route('/vegetables')
 def get_vegetables():
-    vegetables_list = ['beans', 'carrot', 'beetroot', 'cucumber']
+    vegetables_list = ('beans', 'carrot', 'beetroot', 'cucumber')
     return render_template("vegetables.html", data=vegetables_list)
                                                                                                                     
 
 @app.route('/fruits')
 def get_fruits():
-    fruits_list = ["melon", "apple", "strawberry", "grape"]
+    fruits_list = ("melon", "apple", "strawberry", "grape")
     return render_template("fruits.html", data=fruits_list)
 
 
