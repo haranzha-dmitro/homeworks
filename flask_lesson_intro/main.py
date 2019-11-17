@@ -6,18 +6,17 @@ app = Flask(__name__)
 
 @app.route('/')
 def get_home_page():
-    return render_template("home.html", data=get_data())
+    return render_template("home.html")
 
 @app.route('/<item>')
 def get_item_page(item):
-    for element in get_data():
-        if element['title'] == item:
-            print(item)
+    for product in get_data():
+        if product['title'] == item:
             return render_template('item.html',
                                    title=item,
                                    item=item,
-                                   text=element['text'],
-                                   count=len(element['text']))
+                                   text=product['text'],
+                                   count=len(product['text']))
     else:
         return render_template("error404.html")
 
