@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ market.name }}
+{% endblock %}
+
+{% block content %}
+
+<h1 style="padding: 25px;"> {{ market.name }} </h1>
+
+<img style="padding-left:25px " src="{{ url_for('supermarkets.static', filename=market.img_name) }}" width="320px" height="300px">
+
+<p><b>Location: {{ market.location }}</b></p>
+
+{% endblock %}
