@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title%}
+  Add market form
+{% endblock %}
+
+{% block content %}
+
+<h1 style="padding: 25px; padding-top: 25px">Add new market</h1>
+
+<form action="add" method="post" enctype="multipart/form-data" style="padding-left: 30px">
+    {{form.hidden_tag()}}
+    <p>
+        Please enter Name:<br>
+        {{form.name}}<br>
+    </p>
+    <p>
+        Please enter location:<br>
+        {{form.location}}<br>
+    </p>
+    <p>
+        Please enter image:<br>
+        {{form.img_name}}<br>
+    </p>
+
+    <p><input type="submit" value="Submit"></p>
+</form>
+
+{% endblock %}

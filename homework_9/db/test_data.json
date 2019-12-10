@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "name": "apple",
+      "price": "13.0",
+      "description": "Fresh apples for you",
+      "img_name": "apple.jpg"
+    },
+    {
+      "name": "watermelon",
+      "price": "15.5",
+      "description": "big big big watermelon",
+      "img_name": "watermelon.jpg"
+    },
+    {
+      "name": "carrot",
+      "price": "3.50",
+      "description": "fresh carrot for snowman",
+      "img_name": "carrot.jpg"
+    }
+  ],
+  "supermarkets": [
+    {
+      "name": "Varus",
+      "location": "Dnipro",
+      "img_name": "varus.jpg"
+    },
+    {
+      "name": "ATB",
+      "location": "Dnipro",
+      "img_name": "atb.jpg"
+    },
+    {
+      "name": "Silpo",
+      "location": "Kyiv",
+      "img_name": "silpo.jpg"
+    }
+  ]
+}
